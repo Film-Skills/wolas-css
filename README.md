@@ -11,7 +11,8 @@ Base classes and default settings that make up WOLASCSS. Also contains instructi
 
 These basic styles define the 100% width and height for the grids, as well as the default body font.
 
-```// Reset body width, height, margin and padding for the grid.
+```
+// Reset body width, height, margin and padding for the grid.
 html, body {
 	width: 100%;
 	height: 100%;
@@ -26,21 +27,25 @@ html, body {
 // Add padding for the nav, because it is fixed.
 body {
 	padding-top: 55px;
-}```
+}
+```
 
 ### Utility Classes
 
 These classes are .hide and .clearfix. .hide stops an element from showing on the page and .clearfix is used after floated elements to allow the elements after them to align correctly.
 
-```// Utility classes for common functionality.
-	.hide { display: none; }
-	.clearfix { clear: both; }```
+```
+// Utility classes for common functionality.
+.hide { display: none; }
+.clearfix { clear: both; }
+```
 	
 ### Border-Box Model
 
 See the article http://www.paulirish.com/2012/box-sizing-border-box-ftw/ to see what the border-box model for CSS is. Basically it makes it so borders and padding do not affect the overall width of an element as they usually do. The width stays content and it puts the padding and the border inside the element, so to speak.
 
-```/* 
+```
+/* 
  * Apply the border-box model to all elements to fix padding and border issues.
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  */
@@ -49,7 +54,8 @@ See the article http://www.paulirish.com/2012/box-sizing-border-box-ftw/ to see 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}```
+}
+```
 
 ### SASS and Compass
 
