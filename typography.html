@@ -1,0 +1,216 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<title>Typography | WOLAS Style Showroom</title>
+	<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+	<header>
+		<nav class="n-site">
+			<div class="g-container-autoheight">
+				<div class="g-row slim">
+					<div class="g-col one"></div>
+					<div class="g-col ten">
+						<ul>
+							<li><a href="cards.html">Cards</a></li>
+							<li><a href="tables.html">Tables</a></li>
+							<li><a href="typography.html">Typography</a></li>
+							<li>
+								<a href="#">Layout</a>
+								<ul>
+									<li><a href="grid.html">Grid</a></li>
+								</ul>
+							</li>
+							<li><a href="forms.html">Forms & Inputs</a></li>
+							<li><a href="base.html">Base</a></li>
+							<li><a href="icons.html">Icons</a></li>
+							<li><a href="CMNotifications.html">Notifications Example</a></li>
+							<li><a href="CMSearch.html">Search Example</a></li>
+						</ul>
+						<a href="#footer"><span id="m-nav" class="icon-menu2"></span></a>
+					</div>
+					<div class="g-col one"></div>
+				</div>
+			</div>
+		</nav>
+	</header>
+<div class="g-container">
+	<div class="g-row">
+		<div class="g-col one"></div>
+		<div class="g-col ten">
+			<div class="jumbo">
+				<h1>Typography</h1>
+				<h2>The typography styles for WOLASCSS.</h2>
+			</div>
+			<h2>Font</h2>
+			<p>The font used for WOLASCSS is Open Sans. The font files are used with <code>@font-face</code> to deliver them on the web. The files are included in this project. The fallback fonts are in order of preference <code>'Helvetica Neue', Helvetica, Arial, Sans-Serif</code>.</p>
+			<h2>Body Copy</h2>
+			<p>All body copy should be surrounded by <code>p</code> tags. The font size is set to 14px on the <code>body</code>, and the <code>p</code> tag is set to 100% of that font-size. The default line-height is <code>1.6em</code>. Paragraphs have a 10px <code>margin-bottom</code>.</p>
+			<h2>Headings</h2>
+			<p>All headings are available, <code>h1</code> to <code>h6</code>. All headings have a 15px top and bottom margin, and all are <strong>bold</strong>. The <code>.mid</code> and  <code>.right</code> class modifiers can be used to align the headings (you will still need to align anything else yourself).</p>
+			<div class="c-outer compact">
+				<div class="c-title">Heading Levels</div>
+				<div class="c-inner">
+					<h1>Heading 1</h1>
+					<p>font-size: 200%</p>
+					<h2>Heading 2</h2>
+					<p>font-size: 180%</p>
+					<h3>Heading 3</h3>
+					<p>font-size: 160%</p>
+					<h4>Heading 4</h4>
+					<p>font-size: 140%</p>
+					<h5>Heading 5</h5>
+					<p>font-size: 120%</p>
+					<h6>Heading 6</h6>
+					<p>font-size: 100%</p>
+					<h6 class="mid">Heading 6 with Mid Alignment (<code>&lt;h6 class="mid"&gt;</code>)</h6>
+					<h6 class="right">Heading 6 with Right Alignment (<code>&lt;h6 class="right"&gt;</code>)</h6>
+				</div>
+			</div>
+			
+			<h2>Paragraphs</h2>
+			<p>Below is a sample of text in a regular <code>p</code> tag:</p>      
+			<div class="c-outer compact">
+				<div class="c-inner">
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. In turpis pulvinar facilisis. Ut felis.</p>
+				</div>
+			</div>
+			<p>There are several modifiers avaialable for text inside <code>p</code> tags. For bold text, you can use either <code>b</code> or <code>strong</code> tags.</p>
+			<div class="c-outer compact">
+				<div class="c-inner">
+					<pre><code>&lt;p&gt;&lt;strong&gt;Pellentesque habitant morbi&lt;/strong&gt; tristique senectus et netus et malesuada&lt;/p&gt;</code></pre>
+					<p><strong>Pellentesque habitant morbi</strong> tristique senectus et netus et malesuada</p>
+				</div>
+			</div>
+			<p>For italic text, you can use either <code>i</code> or <code>em</code> tags.</p>
+			<div class="c-outer compact">
+				<div class="c-inner">
+					<pre><code>&lt;p&gt;&lt;em&gt;Pellentesque habitant morbi&lt;/em&gt; tristique senectus et netus et malesuada&lt;/p&gt;</code></pre>
+					<p><em>Pellentesque habitant morbi</em> tristique senectus et netus et malesuada</p>
+				</div>
+			</div>
+			<p>To create a paragraph with smaller text, use the <code>small</code> tag. This will make the font 85%.</p>
+			<div class="c-outer compact">
+				<div class="c-inner">
+					<pre><code>&lt;p&gt;&lt;small&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada&lt;/small&gt;&lt;/p&gt;</code></pre>
+					<p><small>Pellentesque habitant morbi tristique senectus et netus et malesuada</small></p>
+				</div>
+			</div>
+			<p>Finally, the <code>.intro</code> class can be applied to a paragraph tag to give it a big impact. Use this when introducing a feature etc.</p>
+			<div class="c-outer compact">
+				<div class="c-inner">
+					<pre><code>&lt;p class="intro"&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada&lt;/p&gt;
+&lt;p&gt;Then some normal paragraph text under the intro.&lt;/p&gt;</code></pre>
+					<p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+					<p>Then some normal paragraph text under the intro.</p>
+				</div>
+			</div>
+			<h2>Lists</h2>
+			<p>Both ordered and unordered lists can be used. Both have a margin value of <code>10px 0 20px 0</code>. Both support one level of sub-listing.</p>
+			<div class="c-outer compact">
+				<div class="c-title">Ordered list</div>
+				<div class="c-inner">
+					<pre><code>&lt;ol&gt;
+	&lt;li&gt;List item 1&lt;/li&gt;
+	&lt;li&gt;List item 2&lt;/li&gt;
+	&lt;li&gt;List item 3&lt;/li&gt;
+	&lt;ol&gt;
+		&lt;li&gt;Sub-list item 1&lt;/li&gt;
+		&lt;li&gt;Sub-list item 2&lt;/li&gt;
+		&lt;li&gt;Sub-list item 3&lt;/li&gt;
+	&lt;/ol&gt;
+&lt;/ol&gt;</code></pre>
+					<ol>
+						<li>List item 1</li>
+						<li>List item 2</li>
+						<li>List item 3</li>
+						<ol>
+							<li>Sub-list item 1</li>
+							<li>Sub-list item 2</li>
+							<li>Sub-list item 3</li>
+						</ol>
+					</ol>
+				</div>
+				<div class="c-title">Unordered list</div>
+				<div class="c-inner">
+					<pre><code>&lt;ul&gt;
+	&lt;li&gt;List item 1&lt;/li&gt;
+	&lt;li&gt;List item 2&lt;/li&gt;
+	&lt;li&gt;List item 3&lt;/li&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Sub-list item 1&lt;/li&gt;
+		&lt;li&gt;Sub-list item 2&lt;/li&gt;
+		&lt;li&gt;Sub-list item 3&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/ul&gt;</code></pre>
+					<ul>
+						<li>List item 1</li>
+						<li>List item 2</li>
+						<li>List item 3</li>
+						<ul>
+							<li>Sub-list item 1</li>
+							<li>Sub-list item 2</li>
+							<li>Sub-list item 3</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+			<h2>Quotes</h2>
+			<p>You can use the <code>blockquote</code> tag to show quotes if required. Probaly won't need to use this very often.</p>
+			<div class="c-outer compact">
+				<div class="c-inner">
+					<pre><code>&lt;blockquote&gt;This is a very profound quote.&lt;/blockquote&gt;</code></pre>
+					<blockquote>This is a very profound quote.</blockquote>
+				</div>
+			</div>
+			<h2>Jumbo</h2>
+			<p>You can make a jumbo div and header like the one at the top of this page, using the <code>.jumbo</code> class on a <code>div</code>, which then contains a <code>h1</code> and <code>h2</code> tag.</p>
+			<div class="c-outer compact">
+				<div class="c-inner">
+					<pre><code>&lt;div class=&quot;jumbo&quot;&gt;
+	&lt;h1&gt;This is the big one&lt;/h1&gt;
+	&lt;h2&gt;And this is the subheader.&lt;/h2&gt;
+&lt;/div&gt;</code></pre>
+				<div class="jumbo">
+					<h1>This is the big one</h1>
+					<h2>And this is the subheader.</h2>
+				</div>
+				</div>
+			</div>
+			<h2>Code</h2>
+			<p>You can also use <code>pre</code> and <code>code</code> tags together to format code on the page, or anything else that needs to be displayed in a monospaced font. You must use pre then code inside, and the spacing that is used will determine how the code is formatted.</p>
+			<div class="c-outer compact">
+				<div class="c-inner">
+					<p>This:</p>
+					<pre><code>&lt;pre&gt;&lt;code&gt;&lt;div class=&quot;jumbo&quot;&gt;
+	&lt;h1&gt;This is the big one&lt;/h1&gt;
+	&lt;h2&gt;And this is the subheader.&lt;/h2&gt;
+&lt;/div&gt;&lt;/pre&gt;&lt;/code&gt;</code></pre>
+					<p>Will produce this:</p>
+					<pre><code>&lt;div class=&quot;jumbo&quot;&gt;
+	&lt;h1&gt;This is the big one&lt;/h1&gt;
+	&lt;h2&gt;And this is the subheader.&lt;/h2&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+			</div>
+		</div>
+		<div class="g-col one"></div>
+	</div>
+	<div class="g-row">
+		<div class="g-col twelve">
+			<footer id="footer">
+				<a href="cards.html">Cards</a> - 
+				<a href="tables.html">Tables</a> - 
+				<a href="typography.html">Typography</a> - 
+				<a href="grid.html">Grid</a> - 
+				<a href="forms.html">Forms & Inputs</a>
+				<a href="base.html">Base</a>
+				<a href="icons.html">Icons</a>
+				<p>WOLASSCSS &copy; Work Skills 2013-2014</p>
+			</footer>
+		</div>
+	</div>
+</div>
+</body>
+</html>

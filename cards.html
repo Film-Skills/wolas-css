@@ -1,0 +1,401 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<title>Cards | WOLAS Style Showroom</title>
+	<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+	<header>
+		<nav class="n-site">
+			<div class="g-container-autoheight">
+				<div class="g-row slim">
+					<div class="g-col one"></div>
+					<div class="g-col ten">
+						<ul>
+							<li><a href="cards.html">Cards</a></li>
+							<li><a href="tables.html">Tables</a></li>
+							<li><a href="typography.html">Typography</a></li>
+							<li>
+								<a href="#">Layout</a>
+								<ul>
+									<li><a href="grid.html">Grid</a></li>
+								</ul>
+							</li>
+							<li><a href="forms.html">Forms & Inputs</a></li>
+							<li><a href="base.html">Base</a></li>
+							<li><a href="icons.html">Icons</a></li>
+							<li><a href="CMNotifications.html">Notifications Example</a></li>
+							<li><a href="CMSearch.html">Search Example</a></li>
+						</ul>
+						<a href="#footer"><span id="m-nav" class="icon-menu2"></span></a>
+					</div>
+					<div class="g-col one"></div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="g-container">
+		<div class="g-row">
+			<div class="g-col one"></div>
+			<div class="g-col ten">
+				<div class="jumbo">
+					<h1>Cards</h1>
+					<h2>
+						Cards are a way to split up content. They work together with grids to
+						create a clean and separated interface.
+					</h2>
+				</div>
+			</div>
+			<div class="g-col one"></div>
+		</div>
+		<div class="g-row">
+			<div class="g-col one"></div>
+			<div class="g-col ten">
+				<p>Cards fill the full width of the <code>.g-col</code> element that they occupy. The simplest syntax is:</p>
+				<pre><code>&lt;div class="c-outer"&gt;
+  &lt;div class="c-inner"&gt;
+	&lt;p&gt;
+		Content goes here
+	&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<p>Which will produce the following output, which has a <code>min-height</code> value of 200px:</p>
+				<div class="c-outer">
+					<div class="c-inner">
+						<p>
+							Content goes here.
+						</p>
+					</div>
+				</div>
+				<p>The <code>.compact</code> class can be added to <code>.c-outer</code> to create a card that has no minimum height.</p>
+				<pre><code>&lt;div class="c-outer compact"&gt;
+  &lt;div class="c-inner"&gt;
+	&lt;p&gt;
+		Content goes here
+	&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<p>Example:</p>
+				<div class="c-outer compact">
+					<div class="c-inner">
+						<p>
+							Content goes here.
+						</p>
+					</div>
+				</div>
+				<p>Finally, a title can be added to the card by including a div with a <code>.c-title</code> class.</p>
+				<pre><code>&lt;div class="c-outer"&gt;
+  &lt;div class="c-title"&gt;&lt;p&gt;This is a card title&lt;/p&gt;&lt;/div&gt;
+  &lt;div class="c-inner"&gt;
+	&lt;p&gt;
+		Content goes here
+	&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<p>Which produces this card:</p>
+				<div class="c-outer compact">
+					<div class="c-title"><p>This is a card title</p></div>
+					<div class="c-inner">
+						<p>
+							Content goes here.
+						</p>
+					</div>
+				</div>
+				<p>You can also apply alert styles to cards, which will color them accordingly. You can use <code>.a-info</code>, <code>.a-warn</code>, <code>.a-erro</code>, and <code>.a-succ</code> on the <code>.c-outer</code> div.</p>
+			</div>
+			<div class="g-col one"></div>
+		</div>
+		<div class="g-row">
+			<div class="g-col one"></div>
+			<div class="g-col two">
+				<div class="c-outer">
+					<div class="c-title"><p>Normal</p></div>
+					<div class="c-inner">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="g-col two">
+				<div class="c-outer a-info">
+					<div class="c-title"><p>.a-info</p></div>
+					<div class="c-inner">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="g-col two">
+				<div class="c-outer a-warn">
+					<div class="c-title"><p>.a-warn</p></div>
+					<div class="c-inner">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="g-col two">
+				<div class="c-outer a-erro">
+					<div class="c-title"><p>.a-erro</p></div>
+					<div class="c-inner">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="g-col two">
+				<div class="c-outer a-succ">
+					<div class="c-title"><p>.a-succ</p></div>
+					<div class="c-inner">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="g-col one last"></div>
+		</div>
+		<div class="g-row">
+			<div class="g-col one"></div>
+			<div class="g-col ten">
+				<p>WOLAS Lite's feed uses a rounded and modified version of the card system. The <code>card-title</code> div must be att the bottom and have the <code>rounded</code> class applied to it. The <code>c-outer</code> div must also have the <code>rounded</code> class applied. The <code>c-inner</code> div must have the <code>nopad</code> class applied because the content will be full width. There is also a secondary <code>c-title</code> with a <code>lite</code> class applied that will show the actual title while the other one will hold hashtags and other info. The code looks like:</p>
+				<pre><code>&lt;div class=&quot;g-col two&quot;&gt;
+	&lt;div class=&quot;c-outer rounded compact&quot;&gt;
+		&lt;div class=&quot;c-inner nopad&quot;&gt;&lt;img src=&quot;img/car-spray-painting.jpg&quot; /&gt;&lt;/div&gt;
+		&lt;div class=&quot;c-title lite&quot;&gt;
+			&lt;p&gt;&lt;strong&gt;Painting a car&lt;/strong&gt;&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;c-title rounded&quot;&gt;
+			&lt;p&gt;&lt;a href=&quot;#&quot;&gt;#painting&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;#car&lt;/a&gt;&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+			</div>
+			<div class="g-col one"></div>
+		</div>
+		<div class="g-row">
+			<div class="g-col one"></div>
+			<div class="g-col two">
+				<div class="c-outer rounded compact">
+					<div class="c-inner nopad"><img src="img/car-spray-painting.jpg" /></div>
+					<div class="c-title lite">
+						<p>Painting a car</p>
+					</div>
+					<div class="c-title rounded">
+						<p><a href="#">#painting</a> <a href="#">#car</a></p>
+					</div>
+				</div>
+				<div class="c-outer rounded compact">
+					<div class="c-inner nopad question">
+						<span class="type">ASSESSMENT | File Submission</span>
+						How do you paint a car in a spray booth using a gun?
+					</div>
+					<div class="c-title lite">
+						<p>Painting a car</p>
+					</div>
+					<div class="c-title rounded">
+						<p><a href="#">#painting</a> <a href="#">#car</a></p>
+					</div>
+				</div>
+				<div class="c-outer rounded compact">
+					<div class="c-inner nopad"><img src="img/car-spray-painting.jpg" /></div>
+					<div class="c-title lite">
+						<p>Painting a car</p>
+					</div>
+					<div class="c-title rounded">
+						<p>Lorem <a href="#">#ipsum</a> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">#latino</a>.</p>
+					</div>
+				</div>
+			</div>
+			<div class="g-col two">
+				<div class="c-outer rounded compact">
+					<div class="c-inner nopad question">
+						How do you paint a car in a spray booth using a gun?
+					</div>
+					<div class="c-title lite">
+						<p>Painting a car</p>
+					</div>
+					<div class="c-title rounded">
+						<p><a href="#">#painting</a> <a href="#">#car</a></p>
+					</div>
+				</div>
+				<div class="c-outer rounded compact">
+					<div class="c-inner nopad"><img src="img/desert.jpg" /></div>
+					<div class="c-title lite">
+						<p>Painting a car</p>
+					</div>
+					<div class="c-title rounded">
+						<p>Lorem <a href="#">#ipsum</a> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">#latino</a>.</p>
+					</div>
+				</div>
+				<div class="c-outer rounded compact">
+					<div class="c-inner nopad question">
+						Upload ten files of your documents.
+					</div>
+					<div class="c-title lite">
+						<p>Painting a car</p>
+					</div>
+					<div class="c-title rounded">
+						<p><a href="#">#painting</a> <a href="#">#car</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="g-col two">
+				<div class="c-outer rounded compact">
+					<div class="c-inner nopad"><img src="img/desert.jpg" /></div>
+					<div class="c-title lite">
+						<p>Painting a car</p>
+					</div>
+					<div class="c-title rounded">
+						<p><a href="#">#painting</a> <a href="#">#car</a></p>
+					</div>
+				</div>
+				<div class="c-outer rounded compact">
+					<div class="c-inner nopad"><img src="img/car-spray-painting.jpg" /><img src="img/car-spray-painting.jpg" /><img src="img/car-spray-painting.jpg" /></div>
+					<div class="c-title lite">
+						<p>Painting a car</p>
+					</div>
+					<div class="c-title rounded">
+						<p>Look at this dude <a href="#">#painting</a> a <a href="#">#car</a> what a <a href="#">#scrub</a>.</p>
+					</div>
+				</div>
+			</div>
+			<div class="g-col two">
+				<div class="c-outer rounded compact">
+					<div class="c-inner nopad"><img src="img/car-spray-painting.jpg" /></div>
+					<div class="c-title lite">
+						<p>Painting a car</p>
+					</div>
+					<div class="c-title rounded">
+						<p>Look at this dude <a href="#">#painting</a> a <a href="#">#car</a> what a <a href="#">#scrub</a>.</p>
+					</div>
+				</div>
+				<div class="c-outer rounded compact">
+					<div class="c-inner nopad question">
+						Upload ten files of your documents.
+					</div>
+					<div class="c-title lite">
+						<p>Painting a car</p>
+					</div>
+					<div class="c-title rounded">
+						<p><a href="#">#painting</a> <a href="#">#car</a></p>
+					</div>
+				</div>
+				<div class="c-outer rounded compact">
+					<div class="c-inner nopad"><img src="img/car-spray-painting.jpg" /></div>
+					<div class="c-title lite">
+						<p>Painting a car</p>
+					</div>
+					<div class="c-title rounded">
+						<p>Look at this dude <a href="#">#painting</a> a <a href="#">#car</a> what a <a href="#">#scrub</a>.</p>
+					</div>
+				</div>
+			</div>
+			<div class="g-col two">
+				<div class="c-outer rounded compact">
+					<div class="c-inner nopad"><img src="img/car-spray-painting.jpg" /></div>
+					<div class="c-title lite">
+						<p>Painting a car</p>
+					</div>
+					<div class="c-title rounded">
+						<p><a href="#">#painting</a> <a href="#">#car</a></p>
+					</div>
+				</div>
+				<div class="c-outer rounded compact">
+					<div class="c-inner nopad"><img src="img/car-spray-painting.jpg" /><img src="img/car-spray-painting.jpg" /><img src="img/car-spray-painting.jpg" /></div>
+					<div class="c-title lite">
+						<p>Painting a car</p>
+					</div>
+					<div class="c-title rounded">
+						<p>Look at this dude <a href="#">#painting</a> a <a href="#">#car</a> what a <a href="#">#scrub</a>.</p>
+					</div>
+				</div>
+			</div>
+			<div class="g-col one"></div>
+		</div>
+		<div class="g-row">
+			<div class="g-col one"></div>
+			<div class="g-col ten">
+				<p>Below are some examples of how cards can be used with different column widths and different content inside the cards.</p>
+			</div>
+			<div class="g-col one"></div>
+		</div>
+		<div class="g-row">
+			<div class="g-col one"></div>
+			<div class="g-col two">
+				<div class="c-outer">
+					<div class="c-title"><p>Student Details</p></div>
+					<div class="c-inner">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="g-col eight">
+				<div class="c-outer compact">
+					<div class="c-title"><p>Student Details</p></div>
+					<div class="c-inner">
+						<h3>A cool table inside a card</h3>
+						<table class="w-t">
+							<tbody>
+								<tr>
+									<th>#</th>
+									<th>Name</th>
+									<th>Email</th>
+									<th>Phone</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Happy Gilmore</td>
+									<td>happy@golfcourse.com</td>
+									<td>0400 123 456</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Billy Maddison</td>
+									<td>billy@school.com</td>
+									<td>0400 123 456</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Sonny Cofax</td>
+									<td>sonny@tollbooth.com</td>
+									<td>0400 123 456</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="c-outer compact">
+					<div class="c-inner">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="g-col one last"></div>
+		</div>
+		<div class="g-row">
+			<div class="g-col twelve">
+				<footer id="footer">
+					<a href="cards.html">Cards</a> - 
+					<a href="tables.html">Tables</a> - 
+					<a href="typography.html">Typography</a> - 
+					<a href="grid.html">Grid</a> - 
+					<a href="forms.html">Forms & Inputs</a>
+					<a href="base.html">Base</a>
+					<a href="icons.html">Icons</a>
+					<p>WOLASSCSS &copy; Work Skills 2013-2014</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

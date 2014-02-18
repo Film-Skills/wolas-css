@@ -1,0 +1,28 @@
+/* 
+ * All media queries for the grid system go here,
+ * to make it responsive for a range of devices.
+ */
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 1535px) 
+and (max-device-width : 2049px) 
+and (orientation : portrait) {
+	.g-col {
+		&.feed {
+			width: 33%;
+		}
+		padding-right: 0 !important;
+		padding: 0 10px;
+	}
+}
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 1535px) 
+and (max-device-width : 2049px) 
+and (orientation : landscape) {
+	.g-col {
+		padding-right: 0 !important;
+		padding: 0 10px;
+	}
+}

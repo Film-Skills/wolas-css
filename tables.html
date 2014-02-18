@@ -1,0 +1,205 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<title>Tables | WOLAS Style Showroom</title>
+	<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+	<header>
+		<nav class="n-site">
+			<div class="g-container-autoheight">
+				<div class="g-row slim">
+					<div class="g-col one"></div>
+					<div class="g-col ten">
+						<ul>
+							<li><a href="cards.html">Cards</a></li>
+							<li><a href="tables.html">Tables</a></li>
+							<li><a href="typography.html">Typography</a></li>
+							<li>
+								<a href="#">Layout</a>
+								<ul>
+									<li><a href="grid.html">Grid</a></li>
+								</ul>
+							</li>
+							<li><a href="forms.html">Forms & Inputs</a></li>
+							<li><a href="base.html">Base</a></li>
+							<li><a href="icons.html">Icons</a></li>
+							<li><a href="CMNotifications.html">Notifications Example</a></li>
+							<li><a href="CMSearch.html">Search Example</a></li>
+						</ul>
+						<a href="#footer"><span id="m-nav" class="icon-menu2"></span></a>
+					</div>
+					<div class="g-col one"></div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="g-container">
+		<div class="g-row">
+			<div class="g-col one"></div>
+			<div class="g-col ten">
+				<div class="jumbo">
+					<h1>Tables</h1>
+					<h2>Different table styles for WOLASCSS.</h2>
+				</div>
+				<h2>Table</h2>
+				<p>To avaoid interfering with other table systems, the <code>.w-t</code> class must be used on all <code>&lt;table&gt;</code> tags. Headers should be inside <code>&lt;th&gt;</code> tags. There should be a <code>&lt;tbody&gt;</code> tag just inbetween the <code>&lt;table&gt;</code> tags.</p>
+<pre><code>&lt;table class="w-t"&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th&gt;#&lt;/th&gt;
+			&lt;th&gt;Name&lt;/th&gt;
+			&lt;th&gt;Email&lt;/th&gt;
+			&lt;th&gt;Phone&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;1&lt;/td&gt;
+			&lt;td&gt;Happy Gilmore&lt;/td&gt;
+			&lt;td&gt;happy@golfcourse.com&lt;/td&gt;
+			&lt;td&gt;0400 123 456&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+</pre></code>
+				<table class="w-t">
+					<tbody>
+						<tr>
+							<th>#</th>
+							<th>Name</th>
+							<th>Email</th>
+							<th>Phone</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td><strong>Happy Gilmore</strong></td>
+							<td>happy@golfcourse.com</td>
+							<td>0400 123 456</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Billy Maddison</td>
+							<td>billy@school.com</td>
+							<td>0400 123 456</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Sonny Cofax</td>
+							<td>sonny@tollbooth.com</td>
+							<td>0400 123 456</td>
+						</tr>
+					</tbody>
+				</table>
+				<h2>Table with the lot</h2>
+				<p>There are two modifier classes that can be used for tables. The <code>.striped</code> class adds a zebra-stripe effect to even numbered rows. The <code>.shadow</code> class adds a subltle drop shadow to the table. Both are demonstrated below:</p>
+<pre><code>&lt;table class="w-t striped shadow"&gt;
+	&lt;tbody&gt;
+	...
+	&lt;/tbody&gt;
+&lt;/table&gt;
+</pre></code>
+				<table class="w-t striped shadow">
+					<tbody>
+						<tr>
+							<th>#</th>
+							<th>Name</th>
+							<th>Email</th>
+							<th>Phone</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Happy Gilmore</td>
+							<td>happy@golfcourse.com</td>
+							<td>0400 123 456</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Billy Maddison</td>
+							<td>billy@school.com</td>
+							<td>0400 123 456</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Sonny Cofax</td>
+							<td>sonny@tollbooth.com</td>
+							<td>0400 123 456</td>
+						</tr>
+					</tbody>
+				</table>
+				<h2>Table no header</h2>
+				<p>All you need to do to have a table without a header is to omit the <code>&lt;th&gt;</code> tags.</p>
+				<table class="w-t">
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Happy Gilmore</td>
+							<td>happy@golfcourse.com</td>
+							<td>0400 123 456</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Billy Maddison</td>
+							<td>billy@school.com</td>
+							<td>0400 123 456</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Sonny Cofax</td>
+							<td>sonny@tollbooth.com</td>
+							<td>0400 123 456</td>
+						</tr>
+					</tbody>
+				</table>
+				<h2>Table with buttons etc.</h2>
+				<table class="w-t striped shadow">
+					<tbody>
+						<tr>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Email</th>
+							<th>Mobile</th>
+							<th style="text-align: right;">&nbsp;</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Happy Gilmore</td>
+							<td>happy@golfcourse.com</td>
+							<td>0400 123 456</td>
+							<td style="text-align: right;"><button class="btn"><span class="icon-arrow-right"></span> Open</button><button class="btn erro"><span class="icon-remove"></span> Delete</button></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Billy Maddison</td>
+							<td>billy@school.com</td>
+							<td>0400 123 456</td>
+							<td style="text-align: right;"><button class="btn"><span class="icon-arrow-right"></span> Open</button><button class="btn erro"><span class="icon-remove"></span> Delete</button></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Sonny Cofax</td>
+							<td>sonny@tollbooth.com</td>
+							<td>0400 123 456</td>
+							<td style="text-align: right;"><button class="btn"><span class="icon-arrow-right"></span> Open</button><button class="btn erro"><span class="icon-remove"></span> Delete</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="g-col one"></div>
+		</div>
+		<div class="g-row">
+			<div class="g-col twelve">
+				<footer id="footer">
+					<a href="cards.html">Cards</a> - 
+					<a href="tables.html">Tables</a> - 
+					<a href="typography.html">Typography</a> - 
+					<a href="grid.html">Grid</a> - 
+					<a href="forms.html">Forms & Inputs</a>
+					<a href="base.html">Base</a>
+					<a href="icons.html">Icons</a>
+					<p>WOLASSCSS &copy; Work Skills 2013-2014</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

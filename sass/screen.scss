@@ -1,0 +1,47 @@
+@import "compass/reset";
+@import "mixins";
+@import "colors";
+@import "grid";
+@import "fonts";
+@import "typography";
+@import "tables";
+@import "alerts";
+@import "cards";
+@import "nav";
+@import "input";
+@import "footer";
+@import "iconfont";
+
+// Reset body width, height, margin and padding for the grid.
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+
+	// Set some basic body fonts, just in case
+	font-family: 'open_sansregular', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+	font-size: 14px;
+	line-height: 1.6em;
+}
+
+// Add padding for the nav, because it is fixed.
+body {
+	padding-top: 5%;
+}
+
+// Utility classes for common functionality.
+.hide { display: none; }
+.clearfix { clear: both; }
+
+/* 
+ * Apply the border-box model to all elements to fix padding and border issues.
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@import "mobile";

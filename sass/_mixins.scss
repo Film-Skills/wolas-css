@@ -1,0 +1,15 @@
+@mixin soft-shadow($spread) {
+	box-shadow: 0 0 $spread rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 $spread rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 0 $spread rgba(0,0,0,0.1);
+}
+@mixin soft-shadow-color($r, $g, $b) {
+	box-shadow: 0 0 10px rgba($r,$g,$b,0.1);
+	-webkit-box-shadow: 0 0 10px rgba($r,$g,$b,0.1);
+	-moz-box-shadow: 0 0 10px rgba($r,$g,$b,0.1);
+}
+@mixin input-focus {
+	outline: none;
+	box-shadow: 0 0 5px rgba(54, 119, 181, 1);
+	border: 1px solid rgba(54, 119, 181, 1);
+}

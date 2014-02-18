@@ -1,0 +1,193 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<title>Forms & Inputs | WOLAS Style Showroom</title>
+	<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+	<header>
+		<nav class="n-site">
+			<div class="g-container-autoheight">
+				<div class="g-row slim">
+					<div class="g-col one"></div>
+					<div class="g-col ten">
+						<ul>
+							<li><a href="cards.html">Cards</a></li>
+							<li><a href="tables.html">Tables</a></li>
+							<li><a href="typography.html">Typography</a></li>
+							<li>
+								<a href="#">Layout</a>
+								<ul>
+									<li><a href="grid.html">Grid</a></li>
+								</ul>
+							</li>
+							<li><a href="forms.html">Forms & Inputs</a></li>
+							<li><a href="base.html">Base</a></li>
+							<li><a href="icons.html">Icons</a></li>
+							<li><a href="CMNotifications.html">Notifications Example</a></li>
+							<li><a href="CMSearch.html">Search Example</a></li>
+						</ul>
+						<a href="#footer"><span id="m-nav" class="icon-menu2"></span></a>
+					</div>
+					<div class="g-col one"></div>
+				</div>
+	
+			</div>
+		</nav>
+	</header>
+	<div class="g-container">
+		<div class="g-row">
+			<div class="g-col one"></div>
+			<div class="g-col ten">
+				<div class="jumbo">
+					<h1>Forms</h1>
+					<h2>
+						There are many ways to style forms and input elements. The main input elements are buttons, textboxes, tetareas, alerts and select menus.
+					</h2>
+				</div>
+				<h2>Buttons</h2>
+				<p>These can be styled in multiple ways to change their importance to the user or the action that they can complete. They should be used for actions as much as possible. The base button is a <code>button</code> element with the <code>.btn</code> class applied. Each button also has 3 sizes: normal which has no class, <code>.mid</code> and <code>.small</code>. By default the button's color is WOLAS Blue. You can also apply the button classes to links.</p>
+				<div class="c-outer compact">
+					<div class="c-inner">
+						<pre><code>&lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;&lt;button class=&quot;btn mid&quot;&gt;Button .mid&lt;/button&gt;&lt;button class=&quot;btn small&quot;&gt;Button .small&lt;/button&gt;&lt;br/&gt;
+&lt;button class=&quot;btn warn&quot;&gt;Button&lt;/button&gt;&lt;button class=&quot;btn warn mid&quot;&gt;Button .mid &lt;/button&gt;&lt;button class=&quot;btn warn small&quot;&gt;Button .small&lt;/button&gt;&lt;br/&gt;
+&lt;button class=&quot;btn erro&quot;&gt;Button&lt;/button&gt;&lt;button class=&quot;btn erro mid&quot;&gt;Button .mid &lt;/button&gt;&lt;button class=&quot;btn erro small&quot;&gt;Button .small&lt;/button&gt;&lt;br/&gt;
+&lt;button class=&quot;btn succ&quot;&gt;Button&lt;/button&gt;&lt;button class=&quot;btn succ mid&quot;&gt;Button .mid &lt;/button&gt;&lt;button class=&quot;btn succ small&quot;&gt;Button .small&lt;/button&gt;&lt;br/&gt;
+&lt;button class=&quot;btn plain&quot;&gt;Button&lt;/button&gt;&lt;button class=&quot;btn plain mid&quot;&gt;Button .mid &lt;/button&gt;&lt;button class=&quot;btn plain small&quot;&gt;Button .small&lt;/button&gt;&lt;br/&gt;</code></pre>
+						<button class="btn">Button</button><button class="btn mid">Button .mid</button><button class="btn small">Button .small</button><br/>
+						<button class="btn warn">Button</button><button class="btn warn mid">Button .mid</button><button class="btn warn small">Button .small</button><br/>
+						<button class="btn erro">Button</button><button class="btn erro mid">Button .mid</button><button class="btn erro small">Button .small</button><br/>
+						<button class="btn succ">Button</button><button class="btn succ mid">Button .mid</button><button class="btn succ small">Button .small</button><br/>
+						<button class="btn plain">Button</button><button class="btn plain mid">Button .mid</button><button class="btn plain small">Button .small</button><br/>
+						<a class="btn">Link that looks like a button</a>
+					</div>
+				</div>
+				<h2>Text Boxes</h2>
+				<p>Text boxes are created using the <code>input</code> tag with the <code>type="text"</code> specification. All inputs have padding already applied to them. A blue <code>box-shadow</code> effect is applied when the input is focused. You can also apply the focus effect yourself by using the <code>.focus</code> class. For a watermark, use the <code>placeholder</code> property on the tag.</p>
+				<div class="c-outer compact">
+					<div class="c-inner">
+						<pre><code>&lt;input type=&quot;text&quot; /&gt; &lt;input type=&quot;text&quot; placeholder=&quot;This is a watermark&quot;/&gt;  &lt;input type=&quot;text&quot; class=&quot;focus&quot; placeholder=&quot;Textbox with .focus&quot;/&gt;</code></pre>
+						<input type="text" /> <input type="text" placeholder="This is a watermark"/>  <input type="text" class="focus" placeholder="Textbox with .focus"/>
+					</div>
+				</div>
+				<p>If there is an error with user input or there is a required field, you can apply the <code>.error</code> class to the element.</p>
+				<div class="c-outer compact">
+					<div class="c-inner">
+						<pre><code>&lt;input type=&quot;text&quot; class="error" placeholder="Textbox with .error" /&gt;</code></pre>
+						<input type="text" class="error" placeholder="Textbox with .error" />
+					</div>
+				</div>
+				<h2>Textarea</h2>
+				<p>All of the above classes etc. also apply to the <code>textarea</code> element.</p>
+				<div class="c-outer compact">
+					<div class="c-inner">
+						<pre><code>&lt;textarea rows=&quot;10&quot; cols=&quot;50&quot;&gt;&lt;/textarea&gt;</code></pre>
+						<textarea rows="10" cols="50"></textarea>
+					</div>
+				</div>
+				<h2>Dropdown</h2>
+				<p>Dropdown lists use the <code>select</code> element and don't have any specific style modifiers apart from the <code>.focus</code> and <code>.error</code> classes.</p>
+				<div class="c-outer compact">
+					<div class="c-inner">
+						<pre><code>&lt;select&gt;
+	&lt;option&gt;Please Select&lt;/option&gt;
+	&lt;option&gt;Martin Brennan&lt;/option&gt;
+	&lt;option&gt;Steve Bennet&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class=&quot;error&quot;&gt;
+	&lt;option&gt;.error&lt;/option&gt;
+	&lt;option&gt;Martin Brennan&lt;/option&gt;
+	&lt;option&gt;Steve Bennet&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class=&quot;focus&quot;&gt;
+	&lt;option&gt;.focus&lt;/option&gt;
+	&lt;option&gt;Martin Brennan&lt;/option&gt;
+	&lt;option&gt;Steve Bennet&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+						<select>
+							<option>Please Select</option>
+							<option>Martin Brennan</option>
+							<option>Steve Bennet</option>
+						</select>
+						<select class="error">
+							<option>.error</option>
+							<option>Martin Brennan</option>
+							<option>Steve Bennet</option>
+						</select>
+						<select class="focus">
+							<option>.focus</option>
+							<option>Martin Brennan</option>
+							<option>Steve Bennet</option>
+						</select>
+					</div>
+				</div>
+				<h2>Checkboxes and Radio Buttons</h2>
+				<p>These elements don't use any specific styles. A checkbox uses the <code>input</code> tag with the <code>type="checkbox"</code> specification. A radio button uses the <code>input</code> tag with the <code>type="radio"</code> specification.</p>
+				<div class="c-outer compact">
+					<div class="c-inner">
+						<pre><code>&lt;input type=&quot;checkbox&quot;&gt;This is a checkbox.&lt;/input&gt;
+&lt;input type=&quot;radio&quot;&gt;This is a radio.&lt;/input&gt;</code></pre>
+						<input type="checkbox">This is a checkbox.</input>
+						<input type="radio">This is a radio.</input>
+					</div>
+				</div>
+				<h2>Disabled and Readonly Inputs</h2>
+				<p>All inputs can have the <code>disabled</code> or <code>readonly</code> property added to their tag to grey out the input and prevent anyone from using it.</p>
+				<div class="c-outer compact">
+					<div class="c-inner">
+						<pre><code>&lt;input type=&quot;checkbox&quot; disabled&gt;This is a checkbox.&lt;/input&gt;
+&lt;input type=&quot;radio&quot; disabled&gt;This is a radio.&lt;/input&gt;
+&lt;input type=&quot;text&quot; disabled /&gt;
+&lt;select disabled&gt;
+	&lt;option&gt;Please Select&lt;/option&gt;
+	&lt;option&gt;Martin Brennan&lt;/option&gt;
+	&lt;option&gt;Steve Bennet&lt;/option&gt;
+&lt;/select&gt;&lt;br/&gt;
+&lt;textarea rows=&quot;10&quot; cols=&quot;50&quot; disabled&gt;&lt;/textarea&gt;</code></pre>
+						<button disabled>Button</button>
+						<input type="checkbox" disabled>This is a checkbox.</input>
+						<input type="radio" disabled>This is a radio.</input>
+						<input type="text" disabled />
+						<select disabled>
+							<option>Please Select</option>
+							<option>Martin Brennan</option>
+							<option>Steve Bennet</option>
+						</select><br/>
+						<textarea rows="10" cols="50" disabled></textarea>
+					</div>
+				</div>
+				<h2>Alerts</h2>
+				<p>There are four different types of alert message that can be used to tell the user important information, warn them about an action or tell them about successes or failures. An alert uses the <code>div</code> tag, with the <code>.a</code> class applied. Each different alert has its own class too; <code>.a-info</code> for a blue information alert, <code>.a-warn</code> for a yellow warning alert, <code>.a-erro</code> for an error and <code>.a-succ</code> for a successful action.</p>
+				<div class="c-outer compact">
+					<div class="c-inner">
+						<pre><code>&lt;div class=&quot;a a-info&quot;&gt;This is an informative and helpful message.&lt;/div&gt;
+&lt;div class=&quot;a a-warn&quot;&gt;Are you sure? That could do something bad!&lt;/div&gt;
+&lt;div class=&quot;a a-erro&quot;&gt;Something has gone terribly wrong!&lt;/div&gt;
+&lt;div class=&quot;a a-succ&quot;&gt;Great! Everything went smoothly and the action is complete.&lt;/div&gt;</code></pre>
+						<div class="a a-info">This is an informative and helpful message.</div>
+						<div class="a a-warn">Are you sure? That could do something bad!</div>
+						<div class="a a-erro">Something has gone terribly wrong!</div>
+						<div class="a a-succ">Great! Everything went smoothly and the action is complete.</div>
+					</div>
+				</div>
+			</div>
+			<div class="g-col one"></div>
+		</div>
+		<div class="g-row">
+			<div class="g-col twelve">
+				<footer id="footer">
+					<a href="cards.html">Cards</a> - 
+					<a href="tables.html">Tables</a> - 
+					<a href="typography.html">Typography</a> - 
+					<a href="grid.html">Grid</a> - 
+					<a href="forms.html">Forms & Inputs</a>
+					<a href="base.html">Base</a>
+					<a href="icons.html">Icons</a>
+					<p>WOLASSCSS &copy; Work Skills 2013-2014</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

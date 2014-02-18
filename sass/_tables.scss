@@ -1,0 +1,41 @@
+table.w-t {
+	width: 100%;
+	margin: 15px 0;
+	border: 1px solid $grey;
+	border-top: 2px solid $blue;
+	&.plain {
+		border-top: 1px solid $grey;;
+	}
+	tr {
+		th {
+			font-family: 'open_sansbold', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+			font-size: 100%;
+			padding: 10px 5px;
+			background-color: $grey-light;
+			border-bottom: 1px solid $grey;
+		}
+		td {
+			font-family: 'open_sansregular', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+			font-size: 100%;
+			padding: 10px 5px;
+			line-height: 1.4em;
+			&.grey {
+				color: $grey;
+				a {
+					color: $grey;
+				}
+			}
+			strong, b {
+				font-family: 'open_sansbold', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+			}
+		}
+	}
+	&.striped {
+		tr:nth-child(odd) {
+			background-color: $grey-lighter;
+		}
+	}
+	&.shadow {
+		@include soft-shadow(10px);
+	}
+}

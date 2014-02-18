@@ -1,0 +1,13 @@
+footer {
+	min-height: 50px;
+	margin: 25px 0 0;
+	text-align: center;
+	width: 100%;
+	background-color: $grey-light;
+	padding: 25px 0;
+	border-top: 1px solid $grey;
+	p, li, a {
+		font-size: 75%;
+		text-decoration: none !important;
+	}
+}

@@ -1,0 +1,104 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<title>Base | WOLAS Style Showroom</title>
+	<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+	<header>
+		<nav class="n-site">
+			<div class="g-container-autoheight">
+				<div class="g-row slim">
+					<div class="g-col one"></div>
+					<div class="g-col ten">
+						<ul>
+							<li><a href="cards.html">Cards</a></li>
+							<li><a href="tables.html">Tables</a></li>
+							<li><a href="typography.html">Typography</a></li>
+							<li>
+								<a href="#">Layout</a>
+								<ul>
+									<li><a href="grid.html">Grid</a></li>
+								</ul>
+							</li>
+							<li><a href="forms.html">Forms & Inputs</a></li>
+							<li><a href="base.html">Base</a></li>
+							<li><a href="icons.html">Icons</a></li>
+							<li><a href="CMNotifications.html">Notifications Example</a></li>
+							<li><a href="CMSearch.html">Search Example</a></li>
+						</ul>
+						<a href="#footer"><span id="m-nav" class="icon-menu2"></span></a>
+					</div>
+					<div class="g-col one"></div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="g-container">
+		<div class="g-row">
+			<div class="g-col one"></div>
+			<div class="g-col ten">
+				<div class="jumbo">
+					<h1>Base</h1>
+					<h2>This page contains more information about the base classes and default settings that make up WOLASCSS. Also contains instructions on how to make changes to the CSS styles.</h2>
+				</div>
+				<h2>HTML and Body Styles</h2>
+				<p>These basic styles define the 100% width and height for the grids, as well as the default body font.</p>
+				<pre><code>// Reset body width, height, margin and padding for the grid.
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+
+	// Set some basic body fonts, just in case
+	font-family: &#39;open_sansregular&#39;, &#39;Helvetica Neue&#39;, Helvetica, Arial, Sans-Serif;
+	font-size: 14px;
+	line-height: 1.6em;
+}
+// Add padding for the nav, because it is fixed.
+body {
+	padding-top: 55px;
+}</code></pre>
+				<h2>Utility Classes</h2>
+				<p>These classes are <code>.hide</code> and <code>.clearfix</code>. <code>.hide</code> stops an element from showing on the page and <code>.clearfix</code> is used after floated elements to allow the elements after them to align correctly.</p>
+				<pre><code>// Utility classes for common functionality.
+	.hide { display: none; }
+	.clearfix { clear: both; }</code></pre>
+				<h2>Border-Box Model</h2>
+				<p>See the article <a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">http://www.paulirish.com/2012/box-sizing-border-box-ftw/</a> to see what the border-box model for CSS is. Basically it makes it so borders and padding do not affect the overall width of an element as they usually do. The width stays content and it puts the padding and the border <strong>inside</strong> the element, so to speak.</p>
+				<pre><code>/* 
+ * Apply the border-box model to all elements to fix padding and border issues.
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+</code></pre>
+				<h2>SASS and Compass</h2>
+				<p>WOLASCSS is built using SASS, which is a CSS extension language which adds features like variables, nesting, and mixins to CSS, which makes it a lot easier to code and manage. Check it out at <a href="http://sass-lang.com/">http://sass-lang.com/</a>. We then use Compass, which is a library of SASS mixins already built like <code>darken</code> and <code>tone</code> etc., as well as a CSS reset. Compass also watches the project directory for CSS changes and then compiles the CSS into a minified, concatenated single CSS file from multiple files.</p>
+				<p>You must open the project folder in cmd and then run the command <code>compass watch .</code> to watch the directory for CSS changes. If you don't do this <strong>the css will not be built</strong>, so your changes won't work. Compass requires ruby, rubygems and the compass gem. See the compass website for more details <a href="http://compass-style.org/">http://compass-style.org/</a>.</p>
+			</div>
+			<div class="g-col one"></div>
+		</div>
+		<div class="g-row">
+			<div class="g-col twelve">
+				<footer id="footer">
+					<a href="cards.html">Cards</a> - 
+					<a href="tables.html">Tables</a> - 
+					<a href="typography.html">Typography</a> - 
+					<a href="grid.html">Grid</a> - 
+					<a href="forms.html">Forms & Inputs</a>
+					<a href="base.html">Base</a>
+					<a href="icons.html">Icons</a>
+					<p>WOLASSCSS &copy; Work Skills 2013-2014</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
