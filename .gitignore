@@ -1,6 +1,6 @@
 # Sublime text
-.sublime-project
-.sublime-workspace
+*.sublime-project
+*.sublime-workspace
 
 # Compass
 .sass-cache
