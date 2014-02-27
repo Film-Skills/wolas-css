@@ -31,8 +31,8 @@ body {
 }
 
 // Utility classes for common functionality.
-.hide { display: none; }
-.clearfix { clear: both; }
+.hide { display: none !important; }
+.clearfix { clear: both !important; }
 
 /* 
  * Apply the border-box model to all elements to fix padding and border issues.
