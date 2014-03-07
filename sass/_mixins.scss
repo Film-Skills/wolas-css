@@ -21,3 +21,6 @@
 @mixin transparency-bg($percent) {
 	background-color: rgba(51, 51, 51, $percent / 100);
 }
+@mixin transparency-bg-saved() {
+	background-color: rgba(51, 51, 51,1);
+}

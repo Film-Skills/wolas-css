@@ -105,6 +105,46 @@
 		border-radius: 0 0 5px 5px;
 		margin: 10px 0;
 	}
+	div.c-status {
+		h4 {
+			margin: 0;
+			color: white;
+			font-size: 15px;
+		}
+		span.icon {
+			font-size: 100%;
+			color: white;
+			margin: 8px 0;
+			display: block;
+		}
+		&.question {
+			font-size: 150%;
+			line-height: 150%;
+			padding: 15% 10%;
+			color:white;
+			font-weight: bold;
+			span.type {
+				font-size: 55%;
+				display: block;
+				line-height: 160%;
+				font-family: 'open_sanslight';
+				color: rgba(255, 255, 255, 0.7);
+			}
+		}
+
+		&.saved {
+			background-color: coral;
+		}
+
+		&.completed {
+			background-color: rgba(133, 165, 124, 1);
+		}
+
+		&.submitted {
+			background-color: rgba(112, 150, 206, 1);
+		}
+	}
+
 	div.c-overlay {
 		@include transparency-bg(95);
 		position: absolute;
