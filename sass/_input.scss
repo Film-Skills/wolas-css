@@ -57,7 +57,7 @@ button.btn, a.btn {
 		width: 100%;
 	}
 }
-input[type="text"], textarea {
+input[type="text"], textarea, input[type="password"] {
 	border: 1px solid #ccc;
 	padding: 4px 10px;
 	transition: box-shadow 0.25s;
@@ -71,6 +71,9 @@ input[type="text"], textarea {
 	}
 	&:focus, &.focus {
 		@include input-focus;
+	}
+	&.no-side {
+		margin: 5px 0;
 	}
 }
 select {
