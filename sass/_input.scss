@@ -118,3 +118,16 @@ input[disabled], input[readonly], select[disabled], select[readonly], button[dis
 		background: #5CB85C;
 	}
 }
+label {
+	display: inline-block;
+	font-family: 'open_sansbold', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+
+	&.stacked {
+		display: block;
+	}
+
+	input, select, textarea {
+		display: block;
+		margin: 5px 0;
+	}
+}
