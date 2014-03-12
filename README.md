@@ -62,3 +62,16 @@ See the article http://www.paulirish.com/2012/box-sizing-border-box-ftw/ to see 
 WOLASCSS is built using SASS, which is a CSS extension language which adds features like variables, nesting, and mixins to CSS, which makes it a lot easier to code and manage. Check it out at http://sass-lang.com/. We then use Compass, which is a library of SASS mixins already built like darken and tone etc., as well as a CSS reset. Compass also watches the project directory for CSS changes and then compiles the CSS into a minified, concatenated single CSS file from multiple files.
 
 You must open the project folder in cmd and then run the command compass watch . to watch the directory for CSS changes. If you don't do this the css will not be built, so your changes won't work. Compass requires ruby, rubygems and the compass gem. See the compass website for more details http://compass-style.org/.
+
+### How to Change & Version
+The following is a step by step process on how to make changes to WOLAS-CSS.
+
+1. Make sure you have ruby installed on your computer and if on Windows added to the PATH variable. It should be installed by default on Mac but for on Windows read this article: [Ruby on Windows](http://www.martin-brennan.com/install-ruby-and-rubygems-on-windows/)
+2. Navigate to your wolas-css project directory using the command line.
+3. If you don't have the `compass` gem installed, run `gem install compass` [Compass](http://compass-style.org/)
+4. Once done, run the command `compass watch .` . That makes compass watch the current directory for CSS changes.
+5. Make changes in the CSS partials in the scss folder or make new partials and include them in style.scss
+6. Once done press `Ctrl+C` in the command window to stop compass watch
+7. You can then commit + push
+
+The versions are located on Amazon S3 and delivered through a CloudFront URL from https://d1ldb0f4tbur5g.cloudfront.net/css/wolascss/#.#.#/css/screen.css where #.#.# is the semantic version number. The demo pages can also be accessed from the same URL e.g. the base page is at https://d1ldb0f4tbur5g.cloudfront.net/css/wolascss/#.#.#/base.html. If a new version needs to be made, a new folder with the latest version number must be made in the css/wolascss folder in the cdn.wolas.com.au bucket on S3.
