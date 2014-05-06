@@ -88,7 +88,7 @@
 			padding: 15% 10%;
 			color:white;
 			font-weight: bold;
-			background-color: coral;
+			background-color: #373737;
 			span.type {
 				font-size: 55%;
 				display: block;
@@ -133,15 +133,15 @@
 		}
 
 		&.saved {
-			background-color: coral;
+			background-color: #C93C29;
 		}
 
 		&.completed {
-			background-color: rgba(133, 165, 124, 1);
+			background-color: #4E8141;
 		}
 
 		&.submitted {
-			background-color: rgba(112, 150, 206, 1);
+			background-color: #3178B9;
 		}
 	}
 
