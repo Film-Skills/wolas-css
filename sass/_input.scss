@@ -11,7 +11,7 @@ select {
 	padding: 3px 10px;
 }
 button.btn, a.btn {
-	display: inline-block !important;
+	display: inline-block;
 	color: white;
 	background-color: $blue;
 	cursor: pointer;
@@ -57,7 +57,7 @@ button.btn, a.btn {
 		width: 100%;
 	}
 }
-input[type="text"], textarea {
+input[type="text"], textarea, input[type="password"] {
 	border: 1px solid #ccc;
 	padding: 4px 10px;
 	transition: box-shadow 0.25s;
@@ -71,6 +71,9 @@ input[type="text"], textarea {
 	}
 	&:focus, &.focus {
 		@include input-focus;
+	}
+	&.no-side {
+		margin: 5px 0;
 	}
 }
 select {
@@ -96,5 +99,35 @@ input[disabled], input[readonly], select[disabled], select[readonly], button[dis
 	transition: none;
 	&:hover {
 		background-color: $grey-light;
+	}
+}
+.p-outer {
+	height: 24px;
+	background-color: $grey-light;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	margin: 5px 0;
+
+	.p-inner {
+		height: 100%;
+		width: 50%;
+		color: white;
+		text-align: center;
+		background: #5CB85C;
+	}
+}
+label {
+	display: inline-block;
+	font-family: 'open_sansbold', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+
+	&.stacked {
+		display: block;
+	}
+
+	input, select, textarea {
+		display: block;
+		margin: 5px 0;
 	}
 }

@@ -1,25 +1,29 @@
 .a {
 	width: 100%;
-	padding: 10px;
+	padding: 7px 10px;
 	margin: 10px 0;
 }
 .a-info {
 	@extend .a;
 	background-color: $blue-light;
 	border: 1px solid $blue-light-border;
+	color: $blue-light-border;
 }
 .a-warn {
 	@extend .a;
 	background-color: $yellow-light;
-	border: 1px solid $yellow;
+	border: 1px solid $yellow-border;
+	color: $yellow-border;
 }
 .a-erro {
 	@extend .a;
 	background-color: $red-light;
-	border: 1px solid $red;
+	border: 1px solid $red-border;
+	color: $red-border;
 }
 .a-succ {
 	@extend .a;
 	background-color: $green-light;
-	border: 1px solid $green;
+	border: 1px solid $green-border;
+	color: $green-border;
 }

@@ -28,7 +28,7 @@
 							<li><a href="CMNotifications.html">Notifications Example</a></li>
 							<li><a href="CMSearch.html">Search Example</a></li>
 						</ul>
-						<a href="#footer"><span id="m-nav" class="icon-menu2"></span></a>
+
 					</div>
 					<div class="g-col one"></div>
 				</div>
@@ -78,6 +78,41 @@
 						<input type="text" class="error" placeholder="Textbox with .error" />
 					</div>
 				</div>
+				<p>You can also apply labels to text inputs. Just wrap the textbox with a <code>label</code> element and put the label text before the element code. This will display the inputs inline; if you want them to stack, use the <code>stacked</code> class.</p>
+				<div class="c-outer compact">
+					<div class="c-inner">
+						<p><strong>Stacked inputs with labels</strong></p>
+						<pre><code>&lt;div class=&quot;c-inner&quot;&gt;
+	&lt;label class=&quot;stacked&quot;&gt;Username
+		&lt;input type=&quot;text&quot; placeholder=&quot;&quot; /&gt;
+	&lt;/label&gt;
+	&lt;label class=&quot;stacked&quot;&gt;Password
+		&lt;input type=&quot;password&quot; placeholder=&quot;&quot; /&gt;
+	&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+						<label class="stacked">Username
+							<input type="text" placeholder="" />
+						</label>
+						<label class="stacked">Password
+							<input type="password" placeholder="" />
+						</label>
+						<p><strong>Inline inputs with labels</strong></p>
+						<pre><code>&lt;div class=&quot;c-inner&quot;&gt;
+	&lt;label&gt;Username
+		&lt;input type=&quot;text&quot; placeholder=&quot;&quot; /&gt;
+	&lt;/label&gt;
+	&lt;label&gt;Password
+		&lt;input type=&quot;password&quot; placeholder=&quot;&quot; /&gt;
+	&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+						<label>Username
+							<input type="text" placeholder="" />
+						</label>
+						<label>Password
+							<input type="password" placeholder="" />
+						</label>
+					</div>
+				</div>
 				<h2>Textarea</h2>
 				<p>All of the above classes etc. also apply to the <code>textarea</code> element.</p>
 				<div class="c-outer compact">
@@ -87,14 +122,16 @@
 					</div>
 				</div>
 				<h2>Dropdown</h2>
-				<p>Dropdown lists use the <code>select</code> element and don't have any specific style modifiers apart from the <code>.focus</code> and <code>.error</code> classes.</p>
+				<p>Dropdown lists use the <code>select</code> element and don't have any specific style modifiers apart from the <code>.focus</code> and <code>.error</code> classes. Labels work on dropdowns too.</p>
 				<div class="c-outer compact">
 					<div class="c-inner">
-						<pre><code>&lt;select&gt;
+						<pre><code>&lt;label&gt;Select a name
+&lt;select&gt;
 	&lt;option&gt;Please Select&lt;/option&gt;
 	&lt;option&gt;Martin Brennan&lt;/option&gt;
 	&lt;option&gt;Steve Bennet&lt;/option&gt;
 &lt;/select&gt;
+&lt;/label&gt;
 &lt;select class=&quot;error&quot;&gt;
 	&lt;option&gt;.error&lt;/option&gt;
 	&lt;option&gt;Martin Brennan&lt;/option&gt;
@@ -105,11 +142,13 @@
 	&lt;option&gt;Martin Brennan&lt;/option&gt;
 	&lt;option&gt;Steve Bennet&lt;/option&gt;
 &lt;/select&gt;</code></pre>
+						<label>Select a name
 						<select>
 							<option>Please Select</option>
 							<option>Martin Brennan</option>
 							<option>Steve Bennet</option>
 						</select>
+						</label>
 						<select class="error">
 							<option>.error</option>
 							<option>Martin Brennan</option>
@@ -169,6 +208,26 @@
 						<div class="a a-warn">Are you sure? That could do something bad!</div>
 						<div class="a a-erro">Something has gone terribly wrong!</div>
 						<div class="a a-succ">Great! Everything went smoothly and the action is complete.</div>
+					</div>
+				</div>
+				<h2>Progress Bars</h2>
+				<p>Progress bars use similar colours to alerts to display progress to users. The width of the entire progress bar is the same width
+					as its container unless you explicitly set a width. The inner progress bar is dependent on the set width style to show progression. If an upload is 50% done, the width of <code>.p-inner</code> should be 50%. If you set text inside the <code>.p-inner</code> div it will show up in the progress bar.</p>
+				<div class="c-outer compact">
+					<div class="c-inner">
+						<div class="p-outer">
+							<div class="p-inner" style="width: 77%"></div>
+						</div>
+						<div class="p-outer" style="width: 50%">
+							<div class="p-inner" style="width: 77%">77%</div>
+						</div>
+
+						<pre><code>&lt;div class=&quot;p-outer&quot;&gt;
+	&lt;div class=&quot;p-inner&quot; style=&quot;width: 77%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;p-outer&quot; style=&quot;width: 50%&quot;&gt;
+	&lt;div class=&quot;p-inner&quot; style=&quot;width: 77%&quot;&gt;77%&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 					</div>
 				</div>
 			</div>

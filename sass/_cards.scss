@@ -4,6 +4,7 @@
 	min-height: 200px;
 	float: left;
 	margin: 10px 0 20px 0;
+	position: relative;
 	@include soft-shadow(5px);
 	div.c-title {
 		background-color: $grey-light;
@@ -12,7 +13,7 @@
 		padding: 10px;
 		p {
 			margin: 0;
-			padding: 10px;
+			padding: 10px 0;
 		}
 		&.rounded {
 			border-radius: 0 0 5px 5px;
@@ -87,7 +88,7 @@
 			padding: 15% 10%;
 			color:white;
 			font-weight: bold;
-			background-color: coral;
+			background-color: #373737;
 			span.type {
 				font-size: 55%;
 				display: block;
@@ -103,5 +104,69 @@
 	&.rounded {
 		border-radius: 0 0 5px 5px;
 		margin: 10px 0;
+	}
+	div.c-status {
+		h4 {
+			margin: 0;
+			color: white;
+			font-size: 15px;
+		}
+		span.icon {
+			font-size: 100%;
+			color: white;
+			margin: 8px 0;
+			display: block;
+		}
+		&.question {
+			font-size: 150%;
+			line-height: 150%;
+			padding: 15% 10%;
+			color:white;
+			font-weight: bold;
+			span.type {
+				font-size: 55%;
+				display: block;
+				line-height: 160%;
+				font-family: 'open_sanslight';
+				color: rgba(255, 255, 255, 0.7);
+			}
+		}
+
+		&.saved {
+			background-color: #C93C29;
+		}
+
+		&.completed {
+			background-color: #4E8141;
+		}
+
+		&.submitted {
+			background-color: #3178B9;
+		}
+	}
+
+	div.c-overlay {
+		@include transparency-bg(95);
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 9999;
+		padding: 20% 10%;
+		h4 {
+			margin: 0;
+			color: white;
+		}
+		span.icon {
+			font-size: 200%;
+			color: white;
+			margin: 8px 0;
+			display: block;
+		}
+	}
+
+	a { 
+		text-decoration: none;
 	}
 }

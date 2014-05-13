@@ -1,0 +1,23 @@
+.feed-filter {
+    width: inherit;
+    position: relative;
+}
+
+.feed-filter-inner {
+    position: fixed;
+    width: 82%;
+    border: 1px solid #eee;
+    background-color: white;
+    z-index: 9999;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feed-item {
+    position: relative;
+    float: left;
+    width: 19%;
+}
+
+#feed-el {
+    width: 100%;
+}

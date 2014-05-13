@@ -7,7 +7,8 @@
 @import "tables";
 @import "alerts";
 @import "cards";
-@import "nav";
+@import "feed";
+@import "nav-new";
 @import "input";
 @import "footer";
 @import "iconfont";
@@ -27,12 +28,12 @@ html, body {
 
 // Add padding for the nav, because it is fixed.
 body {
-	padding-top: 5%;
+	padding-top: 4%;
 }
 
 // Utility classes for common functionality.
-.hide { display: none; }
-.clearfix { clear: both; }
+.hide { display: none !important; }
+.clearfix { clear: both !important; }
 
 /* 
  * Apply the border-box model to all elements to fix padding and border issues.

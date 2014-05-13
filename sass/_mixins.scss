@@ -13,3 +13,14 @@
 	box-shadow: 0 0 5px rgba(54, 119, 181, 1);
 	border: 1px solid rgba(54, 119, 181, 1);
 }
+@mixin transparency($percent) {
+	zoom: 1;
+	filter: alpha(opacity=$percent);
+	opacity: $percent / 100;
+}
+@mixin transparency-bg($percent) {
+	background-color: rgba(51, 51, 51, $percent / 100);
+}
+@mixin transparency-bg-saved() {
+	background-color: rgba(51, 51, 51,1);
+}
