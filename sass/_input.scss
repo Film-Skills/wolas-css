@@ -102,7 +102,7 @@ input[disabled], input[readonly], select[disabled], select[readonly], button[dis
 	}
 }
 .p-outer {
-	height: 24px;
+	height: 10px;
 	background-color: $grey-light;
 	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -129,5 +129,43 @@ label {
 	input, select, textarea {
 		display: block;
 		margin: 5px 0;
+	}
+}
+
+.w-tag {
+	display: inline-block;
+	font-size: 12px;
+	padding: 2px 10px;
+	white-space: nowrap;
+	vertical-align: middle;
+	font-weight: bold;
+	color: white;
+	background-color: #999;
+	line-height: 1.2em;
+	border-radius: 2px;
+
+	a {
+		color: white;
+		text-decoration: none !important;
+	}
+
+	span.ico {
+		font-size: 75%;
+	}
+
+	&.erro {
+		background-color: $red;
+	}
+
+	&.succ {
+		background-color: $green;
+	}
+
+	&.warn {
+		background-color: $yellow-border;
+	}
+
+	&.info {
+		background-color: $blue;
 	}
 }
