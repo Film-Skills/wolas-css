@@ -1,3 +1,5 @@
+@import "compass/css3/text-shadow";
+
 /*reset the styles first*/
 select, option, input, button, textarea, a.btn {
 	font-family: 'open_sansregular', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
@@ -5,44 +7,57 @@ select, option, input, button, textarea, a.btn {
 	padding: 6px 20px;
 	margin: 5px;
 	border: 0;
+
+	&.mid {
+		width: 250px;
+	}
+	&.long {
+		width: 350px;
+	}
 }
 select {
 	border: 1px solid #ccc;
 	padding: 3px 10px;
 }
 button.btn, a.btn {
+	outline: none;
 	display: inline-block;
 	color: white;
 	background-color: $blue;
 	cursor: pointer;
-	transition: background-color 0.5s;
+	transition: background-color 0.5s, text-shadow 0.5s;
 	text-decoration: none;
 	&:hover {
-		background-color: darken($blue, 5%);
+		background-color: $blue-dark;
+		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
 	}
 	&.warn {
 		background-color: $yellow;
 		&:hover {
-			background-color: darken($yellow, 5%);
+			background-color: darken($yellow, 10%);
+			@include text-shadow(rgba(0, 0, 0, 0.5) 0px 2px 2px);
 		}
 	}
 	&.erro {
 		background-color: $red;
 		&:hover {
-			background-color: darken($red, 5%);
+			background-color: darken($red, 10%);
+			@include text-shadow(rgba(0, 0, 0, 0.5) 0px 2px 2px);
 		}
 	}
 	&.succ {
 		background-color: $green;
 		&:hover {
-			background-color: darken($green, 5%);
+			background-color: darken($green, 10%);
+			@include text-shadow(rgba(0, 0, 0, 0.5) 0px 2px 2px);
 		}
 	}
 	&.plain {
 		color: #000;
 		background-color: $grey;
 		&:hover {
-			background-color: darken($grey, 5%);
+			background-color: darken($grey, 10%);
+			@include text-shadow(rgba(0, 0, 0, 0.2) 0px 2px 2px);
 		}
 	}
 	&.mid {

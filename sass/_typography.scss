@@ -6,16 +6,17 @@ p {
 	&.intro {
 		font-size: 140%;
 	}
-	em, i {
-		font-family: 'open_sansitalic', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
-		font-style: italic;
-	}
-	strong, b {
-		font-family: 'open_sansbold', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
-	}
 	small {
 		font-size: 85%;
 	}
+}
+em, i {
+	font-family: 'open_sansitalic', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+	font-style: italic;
+}
+strong, b {
+	font-family: 'open_sansbold', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+	font-style: bold;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 15px 0;

@@ -44,7 +44,7 @@
 					<h2>Different table styles for WOLASCSS.</h2>
 				</div>
 				<h2>Table</h2>
-				<p>To avaoid interfering with other table systems, the <code>.w-t</code> class must be used on all <code>&lt;table&gt;</code> tags. Headers should be inside <code>&lt;th&gt;</code> tags. There should be a <code>&lt;tbody&gt;</code> tag just inbetween the <code>&lt;table&gt;</code> tags.</p>
+				<p>To avoid interfering with other table systems, the <code>.w-t</code> class must be used on all <code>&lt;table&gt;</code> tags. Headers should be inside <code>&lt;th&gt;</code> tags. There should be a <code>&lt;tbody&gt;</code> tag just inbetween the <code>&lt;table&gt;</code> tags.</p>
 <pre><code>&lt;table class="w-t"&gt;
 	&lt;tbody&gt;
 		&lt;tr&gt;
@@ -126,9 +126,56 @@
 						</tr>
 					</tbody>
 				</table>
+				<h2>Compact Table</h2>
+				<p>If you need a more compact table with a smaller font, then the <code>.compact</code> class applies a padding of 5px instead of the usual and reduces font sizes to 85% in the table.</p>
+<pre><code>&lt;table class="w-t compact"&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th&gt;#&lt;/th&gt;
+			&lt;th&gt;Name&lt;/th&gt;
+			&lt;th&gt;Email&lt;/th&gt;
+			&lt;th&gt;Phone&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;1&lt;/td&gt;
+			&lt;td&gt;Happy Gilmore&lt;/td&gt;
+			&lt;td&gt;happy@golfcourse.com&lt;/td&gt;
+			&lt;td&gt;0400 123 456&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+</pre></code>
+				<table class="w-t compact striped">
+					<tbody>
+						<tr>
+							<th>#</th>
+							<th>Name</th>
+							<th>Email</th>
+							<th>Phone</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td><strong>Happy Gilmore</strong></td>
+							<td>happy@golfcourse.com</td>
+							<td>0400 123 456</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Billy Maddison</td>
+							<td>billy@school.com</td>
+							<td>0400 123 456</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Sonny Cofax</td>
+							<td>sonny@tollbooth.com</td>
+							<td>0400 123 456</td>
+						</tr>
+					</tbody>
+				</table>
 				<h2>Table no header</h2>
 				<p>All you need to do to have a table without a header is to omit the <code>&lt;th&gt;</code> tags.</p>
-				<table class="w-t">
+				<table class="w-t striped">
 					<tbody>
 						<tr>
 							<td>1</td>

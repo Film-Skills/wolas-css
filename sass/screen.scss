@@ -34,6 +34,8 @@ body {
 // Utility classes for common functionality.
 .hide { display: none !important; }
 .clearfix { clear: both !important; }
+.nopad { padding: 0 !important; }
+.nomargin { margin: 0 !important; }
 
 /* 
  * Apply the border-box model to all elements to fix padding and border issues.
