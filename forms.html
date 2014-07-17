@@ -212,22 +212,31 @@
 				</div>
 				<h2>Progress Bars</h2>
 				<p>Progress bars use similar colours to alerts to display progress to users. The width of the entire progress bar is the same width
-					as its container unless you explicitly set a width. The inner progress bar is dependent on the set width style to show progression. If an upload is 50% done, the width of <code>.p-inner</code> should be 50%. If you set text inside the <code>.p-inner</code> div it will show up in the progress bar.</p>
+					as its container unless you explicitly set a width. The inner progress bar is dependent on the set width style to show progression. If an upload is 50% done, the width of <code>.p-inner</code> should be 50%.</p>
 				<div class="c-outer compact">
 					<div class="c-inner">
 						<div class="p-outer">
 							<div class="p-inner" style="width: 77%"></div>
 						</div>
 						<div class="p-outer" style="width: 50%">
-							<div class="p-inner" style="width: 77%">77%</div>
+							<div class="p-inner" style="width: 77%"></div>
 						</div>
 
 						<pre><code>&lt;div class=&quot;p-outer&quot;&gt;
 	&lt;div class=&quot;p-inner&quot; style=&quot;width: 77%&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;p-outer&quot; style=&quot;width: 50%&quot;&gt;
-	&lt;div class=&quot;p-inner&quot; style=&quot;width: 77%&quot;&gt;77%&lt;/div&gt;
+	&lt;div class=&quot;p-inner&quot; style=&quot;width: 77%&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+					</div>
+				</div>
+
+				<h2>Tags</h2>
+				<p>Tags are small, inline color labels that can be used as either tag styles for hashtags or as indicators of status etc.</p>
+				<div class="c-outer compact">
+					<div class="c-inner">
+						<h1>This is a header with a tag <span class="w-tag">#wolas <span class="icon-cancel-circle ico"></span></span> <span class="w-tag erro">Revise</span> <span class="w-tag succ">Completed</span> <span class="w-tag warn">Not Started</span> <span class="w-tag info">Submitted</span></h1>
+						<p>This is a paragraph with tags <span class="w-tag">#wolas <span class="icon-cancel-circle ico"></span></span> <span class="w-tag erro">Revise</span> <span class="w-tag succ">Completed</span> <span class="w-tag warn">Not Started</span> <span class="w-tag info">Submitted</span></p>
 					</div>
 				</div>
 			</div>
