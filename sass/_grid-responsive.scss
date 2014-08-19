@@ -1,28 +1,44 @@
-/* 
- * All media queries for the grid system go here,
- * to make it responsive for a range of devices.
- */
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 1535px) 
-and (max-device-width : 2049px) 
-and (orientation : portrait) {
-	.g-col {
-		&.feed {
-			width: 33%;
-		}
-		padding-right: 0 !important;
-		padding: 0 10px;
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+    .appear {
+		display: none;
 	}
 }
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 1535px) 
-and (max-device-width : 2049px) 
-and (orientation : landscape) {
-	.g-col {
-		padding-right: 0 !important;
-		padding: 0 10px;
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+    .g-col {
+    	&.disappear {
+    		display: none;
+    	}
+    	&.stack {
+    		width: 100%;
+    		padding: 0 3%;
+    	}
+
+    	.g-row {
+    		.g-col {
+    			&.stack {
+		    		width: 100%;
+		    		padding: 0;
+		    	}
+    		}
+    	}
+    }
+
+    .disappear {
+		display: none;
+	}
+
+	.appear {
+		display: block;
+	}
+
+	.expand {
+		width: 100%;
 	}
 }

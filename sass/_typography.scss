@@ -142,3 +142,16 @@ a {
 		text-decoration: underline;
 	}
 }
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+	/* portrait phones */
+	h1 {
+		font-size: 160%;
+		margin: 5px 0;
+	}
+
+	h2 {
+		font-size: 125%;
+		margin: 5px 0;
+	}
+}
