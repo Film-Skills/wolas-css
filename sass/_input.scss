@@ -8,11 +8,8 @@ select, option, input, button, textarea, a.btn {
 	margin: 5px;
 	border: 0;
 
-	&.mid {
-		width: 250px;
-	}
 	&.long {
-		width: 350px;
+		width: 100%;
 	}
 }
 select {
