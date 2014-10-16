@@ -146,6 +146,10 @@
 		&.submitted {
 			background-color: #3178B9;
 		}
+
+		&.notstarted {
+			background-color: #373737;
+		}
 	}
 
 	div.c-overlay {
